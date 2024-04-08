@@ -1,4 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PaperTalk
+
+Chat with your documents in seconds.
+PaperTalk allows you to have conversations with any PDF document. Simply upload your file and start asking questions right away.
+
+### Technologies:
+
+- React, Tailwind - Development
+- OPENAI API - To chat with PDF
+- Langchain - To read and vectorize PDF
+- Postgresql - To store data
+- Kinde - For Authentication
+- Uploadthing - to Upload files
+- PineCone api - to store vectors
+
 
 ## Getting Started
 
@@ -14,23 +28,26 @@ pnpm dev
 bun dev
 ```
 
+To Sync database with prisma
+```
+>>> npx prisma db push
+
+>>> npx prisma generate                                                                                                 
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000/api/auth/login?
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Demonstration
 
-## Learn More
+Main Page:
+![image](images/main_page.png)
 
-To learn more about Next.js, take a look at the following resources:
+Dashboard:
+![image](images/dashboard.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Chat Page:
+![image](images/chat_page_2.png)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
